@@ -52,3 +52,9 @@ Example
 ```sqf
 [] call bso_jamming_fnc_turnOff;
 ```
+
+
+### License
+
+Suppose it has to be GPL as it uses ACRE2 code. Bit ugly tho. Would rather have it MIT and copy the file dynamically.
+Who the hell cares about a license for 10 lines of code anyway...
