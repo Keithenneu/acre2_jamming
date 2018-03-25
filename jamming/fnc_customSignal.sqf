@@ -49,7 +49,6 @@ if (_distance > bso_jamming_range_full + bso_jamming_gradient_distance) exitWith
 private _impact = (bso_jamming_range_full + bso_jamming_gradient_distance - _distance) / bso_jamming_gradient_distance;
 _impact = (_impact min 1.0) max 0.0;
 
-private _maxJamSignal = _min + (_max - _min) * JAMMING_LEVEL;
 private _signal = _impact * _maxJamSignal + (1 - _impact) * _maxSignal;
 _px = _impact * JAMMING_LEVEL + (1 - _impact) * _px;
 

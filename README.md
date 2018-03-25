@@ -39,7 +39,7 @@ Example
 [position jammer, 100, 100] call bso_jamming_fnc_turnOn;
 ```
 
-#### Turn On
+#### Turn Off
 
 `bso_jamming_fnc_turnOff`
 
