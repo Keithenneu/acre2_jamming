@@ -1,4 +1,6 @@
-Just a simple script for adding a jammer to a mission
+Just a simple script for adding a jammer to a mission.
+
+If the receiving side is within the jamming area, the transmission quality will be reduced until its content is hard to understand. It will still be good enough to allow for communication using slow speaking, repition of messages, spelling alphabets, etc.
 
 ### Setup
 
