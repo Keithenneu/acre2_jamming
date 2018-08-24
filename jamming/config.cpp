@@ -8,20 +8,25 @@ class CfgFunctions
             {
                 file = "jamming\fnc_getSignal.sqf";
             };
-            
+
             class turnOnClient
             {
                 file = "jamming\fnc_turnOnClient.sqf";
             };
+
+            class getJammerLocation
+            {
+                file = "jamming\fnc_getJammerLocation.sqf";
+            };
         };
-        
+
         class public
         {
             class turnOn
             {
                 file = "jamming\fnc_turnOn.sqf";
             };
-            
+
             class turnOff
             {
                 file = "jamming\fnc_turnOff.sqf";

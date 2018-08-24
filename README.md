@@ -18,7 +18,7 @@ mymission.VR
 
 in `description.ext` add
 ```cpp
-#include "jamming\config.cpp
+#include "jamming\config.cpp"
 ```
 
 ### Usage
@@ -31,16 +31,21 @@ Turns on jamming, originating from a given point.
 Must be executed on server.
 
 Takes 3 arguments:
-- A position (3D)
+- Jamming source: Either a position (3D), or an object
 - A range in meters for maximum jamming
 - An additional range for gradually weaker jamming (smooth transition between full and no jamming)
 
 Example
 ```sqf
 // jammer is some antenna/device/object in the mission
-[position jammer, 100, 100] call bso_jamming_fnc_turnOn;
+// full jamming within 4km
+// weaker jamming up to 6km
+[position jammer, 4000, 2000] call bso_jamming_fnc_turnOn;
 ```
-
+```sqf
+// jammer is some movable object in the mission
+[jammer, 500, 500] call bso_jamming_fnc_turnOn;
+```
 #### Turn Off
 
 `bso_jamming_fnc_turnOff`

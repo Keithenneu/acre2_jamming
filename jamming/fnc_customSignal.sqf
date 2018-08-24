@@ -1,8 +1,8 @@
-/* bso_jamming_location = _location;
+/* bso_jamming_source = _location;
  *  bso_jamming_range_full = _rangefull;
  * bso_jamming_gradient_distance = _gradientdistance;
  */
- 
+
  /*
  * Arguments:
  * 0: Frequency <NUMBER>
@@ -18,13 +18,14 @@
  *
  * Public: No
  */
- 
+
 #define JAMMING_LEVEL 0.18
 
 params ["_freq", "_pwr", "_rx", "_tx"];
 
 private _receiverPos = [_rx] call acre_sys_radio_fnc_getRadioPos;
-private _distance = bso_jamming_location distance _receiverPos;
+private _source_location = [] call bso_jamming_fnc_getJammerLocation;
+private _distance = _source_location distance _receiverPos;
 
 private _realRadioRx = [_rx] call acre_sys_radio_fnc_getRadioBaseClassname;
 private _min = getNumber (configFile >> "CfgAcreComponents" >> _realRadioRx >> "sensitivityMin");
