@@ -63,5 +63,6 @@ Example
 
 ### License
 
-Suppose it has to be GPL as it uses ACRE2 code. Bit ugly tho. Would rather have it MIT and copy the file dynamically.
-Who the hell cares about a license for 10 lines of code anyway...
+`jamming/fnc_getSignal.sqf` is part of ACRE2 (https://github.com/IDI-Systems/acre2) and only provided with this repository for convenience.
+
+Everything else is under MIT License. Go wild.
